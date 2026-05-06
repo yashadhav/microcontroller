@@ -1,0 +1,1 @@
+#include <reg51.h>void Delay(unsigned int);void main(void){while(1)  //INFINITE LOOP{  P1=0x0FF;Delay(250);P1=0x00;Delay(250);}}void Delay(unsigned int xtime){unsigned int i;unsigned char j;for(i=0;i<xtime;i++)for(j=0;j<165;j++);}
